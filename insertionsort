@@ -1,0 +1,11 @@
+def insertionsort(alist):
+    for index in range(i,len(alist)):
+        currentvalue=alist[index]
+        position=index
+        while position>0 and alist[position-1]>currentvalue:
+            alist[position]=alist[position-1]
+            position=position-1
+            alist[position]=currentvalue
+            alist=[15,2,39,41,67,73,85,76,90]
+            insertionsort(alist)
+            print(alist)
